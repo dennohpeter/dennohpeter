@@ -1,0 +1,6 @@
+path: /
+template: index
+context:
+    static: 
+        page-title: Home | Dennis Peterson
+    
