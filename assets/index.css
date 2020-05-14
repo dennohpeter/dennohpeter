@@ -204,6 +204,28 @@ p {
     font-size: 18px;
   }
 }
+
+.btn_get_in_touch .btn_outline {
+  color: var(--highlight-color);
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1;
+  margin-top: 35px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: var(--highlight-color);
+  border-image: initial;
+  border-radius: 3px;
+  padding: 1.25rem 1.75rem;
+  display: inline-block;
+}
+
+@media (max-width: 48em) {
+  .btn_get_in_touch .btn_outline {
+    margin-top: 25px;
+  }
+}
+
 /* post cards */
 .post-card {
   padding: 20px 0;
@@ -248,39 +270,40 @@ p {
 /* Footer */
 
 .footer {
-	bottom: 0;
-	/* position: absolute; */
-	display: flex;
-	-webkit-box-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	align-items: center;
-	flex-direction: column;
-	text-align: center;
-	min-height: 70px;
-  margin: 30px 0 0;  
+  bottom: 0;
+  /* position: absolute; */
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  min-height: 70px;
+  margin: 30px 0 0;
   color: var(--uses-secondary-color);
 }
 
 .footer_meta {
-	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
   font-size: 13px;
-  line-height: 1.5;  
+  line-height: 1.5;
 }
 
 .footer_social {
-	width: 96%;
-	display: none;
-	margin: 5px auto 10px;
+  width: 80%;
+  display: none;
+  margin: 5px auto 10px;
 }
 
 .footer_social ul {
-	display: flex;
-	-webkit-box-pack: justify;
-	justify-content: space-between;
-	-webkit-box-align: center;
-	align-items: center;
-	padding: 0px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 0px;
   margin: 0px;
   list-style: none;
 }
@@ -292,7 +315,7 @@ p {
 }
 
 @media (max-width: 48em) {
-	.footer_social {
-		display: block;
-	}
+  .footer_social {
+    display: block;
+  }
 }
