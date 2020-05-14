@@ -3,4 +3,6 @@ template: index
 context:
     static: 
         page-title: Home | Dennis Peterson
+    dynamic:
+        home: session.query(home).all()[0]
     

@@ -1,2 +1,5 @@
 project-name: Portfolio
 base-path: /
+context:
+    static:
+        github: https://github.com/dennohpeter
