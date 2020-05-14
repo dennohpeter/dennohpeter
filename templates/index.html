@@ -7,6 +7,7 @@
     <title>{{ page_title }}</title>
     <!-- Css Styles -->
     <link rel="stylesheet" href="{% asset 'index.css' %}">
+    <link rel="stylesheet" href="{% asset 'iconify.css' %}">
 </head>
 
 <body>
@@ -105,7 +106,43 @@
                 </div>
             </div>
         </div>
-        <footer> Built & Designed by <a href="{{ github }}" target="_blank" class="link">Dennis Peterson</a>. </footer>
+        <footer class="footer">
+            <div class="footer_social">
+                <ul>
+                    <li>
+                        <a href="{{ github }}" target="_blank" title="Github" rel="nofollow noopener noreferrer">
+                            <i class="icon-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="{{ gitlab }}" target="_blank" title="Gitlab" rel="nofollow noopener noreferrer">
+                            <i class="icon-gitlab"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ stackoverflow }}" target="_blank" title="Stack Overflow"
+                            rel="nofollow noopener noreferrer">
+                            <i class="icon-stack-overflow"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ devpost }}" target="_blank" title="Devpost" rel="nofollow noopener noreferrer">
+                            <i class="icon-devpost"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="{{ twitter }}" target="_blank" title="Github" rel="nofollow noopener noreferrer">
+                            <i class="icon-twitter"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_meta">
+                <p>Built & Designed by
+                    <a href="{{ github }}" target="_blank" rel="nofollow noopener noreferrer" class="link">
+                        {{ author }}</a>.
+                </p>
+            </div>
+        </footer>
     </div>
     <script src="{% asset 'base.js' %}"></script>
 </body>

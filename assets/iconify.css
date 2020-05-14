@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'portfolio-v5';
+  src:  url('fonts/portfolio-v5.eot?onev91');
+  src:  url('fonts/portfolio-v5.eot?onev91#iefix') format('embedded-opentype'),
+    url('fonts/portfolio-v5.ttf?onev91') format('truetype'),
+    url('fonts/portfolio-v5.woff?onev91') format('woff'),
+    url('fonts/portfolio-v5.svg?onev91#portfolio-v5') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'portfolio-v5' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-folder:before {
+  content: "\e90b";
+}
+.icon-theme:before {
+  content: "\e902";
+}
+.icon-codewars:before {
+  content: "\e909";
+}
+.icon-issues:before {
+  content: "\e90c";
+}
+.icon-chevrons-right:before {
+  content: "\e900";
+}
+.icon-external-link:before {
+  content: "\e901";
+}
+.icon-gitlab:before {
+  content: "\e906";
+}
+.icon-web:before {
+  content: "\e912";
+}
+.icon-chat:before {
+  content: "\e913";
+}
+.icon-open-web:before {
+  content: "\e914";
+}
+.icon-stack-overflow:before {
+  content: "\e90a";
+}
+.icon-point-up:before {
+  content: "\e907";
+}
+.icon-point_down:before {
+  content: "\e915";
+}
+.icon-like:before {
+  content: "\f087";
+}
+.icon-gift:before {
+  content: "\e903";
+}
+.icon-github:before {
+  content: "\e904";
+}
+.icon-twitter:before {
+  content: "\e908";
+}
+.icon-devpost:before {
+  content: "\e911";
+}

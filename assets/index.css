@@ -246,9 +246,53 @@ p {
 }
 
 /* Footer */
-footer {
-  text-align: center;
-  font-size: 13px;
-  padding: 100px 0;
+
+.footer {
+	bottom: 0;
+	/* position: absolute; */
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	min-height: 70px;
+  margin: 30px 0 0;  
   color: var(--uses-secondary-color);
+}
+
+.footer_meta {
+	font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", "Lucida Console", Monaco, monospace;
+  font-size: 13px;
+  line-height: 1.5;  
+}
+
+.footer_social {
+	width: 96%;
+	display: none;
+	margin: 5px auto 10px;
+}
+
+.footer_social ul {
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.footer_social ul li a {
+  padding: 10px;
+  text-decoration: none;
+  color: currentColor;
+}
+
+@media (max-width: 48em) {
+	.footer_social {
+		display: block;
+	}
 }
