@@ -57,7 +57,11 @@ body {
   color: var(--highlight-color);
   text-decoration: none;
 }
-
+hr {
+  border: none;
+  border-top: 1px var(--hr-color) solid;
+  margin: 45px 0;
+}
 .container {
   box-sizing: border-box;
   margin-left: auto;
@@ -266,7 +270,35 @@ p {
   font-size: 20px;
   line-height: 1.9em;
 }
+.about-intro,
+.tools-intro {
+  font-size: 20px;
+  line-height: 1.8em;
+  color: var(--secondary-color);
+  margin-top: 20px;
+}
+.about-intro a,
+.tools-intro a {
+  color: var(--heading-color);
+  text-decoration: none;
+  border-bottom: 1px var(--heading-color) dashed;
+}
 
+.skills {
+  display: grid;
+  grid-template-columns: minmax(140px, 200px) minmax(140px, 200px);
+  overflow: hidden;
+  padding: 0px;
+  margin: 20px 0px 0px;
+}
+
+.skills li {
+  position: relative;
+  margin-bottom: 15px;
+  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
+    "Lucida Console", Monaco, monospace;
+  font-size: 1.1rem;
+}
 /* Footer */
 
 .footer {

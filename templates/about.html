@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="about-intro">
+                {{ about.content|safe }}
+
+                <ul class="skills">
+                    {% for skill in about.skills %}
+                    <li>
+                        <i class="icon-chevrons-right"></i> {{ skill.name }}
+                    </li>
+                    {% else %}
+                    {{ util.placeholder(title) }}
+                    {% endfor %}
+                </ul>
+                <hr>
+                <p>Follow Me on <a href="{{ twitter }}" target="_blank" rel="noopener noreferrer nofollow">Twitter</a>. To hangout (^-^).</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

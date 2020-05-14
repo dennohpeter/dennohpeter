@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page_title }}</title>
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% asset 'index.css' %}">
+    <link rel="stylesheet" href="{% asset 'iconify.css' %}">
+</head>
+
+<body>
+    <div class="wrapper">
+        {% include 'navbar.html' %}
+        
+        {% block content %}
+            
+        {% endblock %}
+            
+        {% include 'footer.html' %}
+    </div>
+    <script src="{% asset 'base.js' %}"></script>
+</body>
+
+</html>
