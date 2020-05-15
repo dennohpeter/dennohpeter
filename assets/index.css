@@ -295,10 +295,10 @@ p {
 
 .skills li {
   position: relative;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
     "Lucida Console", Monaco, monospace;
-  font-size: 0.9em;
+  font-size: 0.8em;
 }
 /* Footer */
 
@@ -314,7 +314,7 @@ p {
   text-align: center;
   min-height: 70px;
   margin: 30px 0 0;
-  color: var(--uses-secondary-color);
+  color: var(--secondary-color);
 }
 
 .footer_meta {
