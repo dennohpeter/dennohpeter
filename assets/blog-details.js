@@ -16,5 +16,5 @@ const toc_item_highlighter = () => {
 
 }
 
-toc_toggle();
-toc_item_highlighter();
+// toc_toggle();
+// toc_item_highlighter();
