@@ -1,0 +1,5 @@
+path:
+  template: /blog/{{ article.slug }}
+  for-each:
+    article: session.query(articles).all()
+template: article

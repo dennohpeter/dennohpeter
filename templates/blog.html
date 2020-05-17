@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block page_css %}
+<link rel="stylesheet" type="text/css" href="{% asset 'blog.css' %}">
+{% endblock %}
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tag-list-wrapper">
+                <ul class="tag-list">
+                    {% for tag in tags %}
+                    <li class="tag-list__item">
+                        <span class="tag-list__link">{{ tag.name }}</span>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="feed">
+                {% for article in articles %}
+                <article class="feed__post">
+                    <div class="post-card">
+                        <a href="{% url 'article', article %}">
+                            <div class="post-card__feature-image"
+                                style="background-image:url({% asset 'images/' %}{{ article.cover[0].name }})">
+                            </div>
+                        </a>
+                        <header class="post-card__header">
+                            <div class="post-card__meta">
+                                <span class="post-card__tag">
+                                    {% for tag in article.tags %}
+                                    <span class="_tag"> {{ tag.name }} </span>
+                                    {% endfor %}
+                                </span>
+                                <span class="post-card__date">{{ article.published }}</span>
+                            </div>
+                            <h2 class="post-card__title">
+                                <a href="{% url 'article', article %}"> {{ article.title }} </a>
+                            </h2>
+                        </header>
+                        <a href="{% url 'article', article %}">
+                            <section class="post-card__excerpt">
+                                {{ article.excerpt }}
+                            </section>
+                            <footer class="post-card__footer">
+                                <img src="{% asset 'favicon/android-chrome-512x512.png' %}"
+                                    class="post-card__profile-image" alt="{{ article.author }}">
+                                {{ article.author }}
+                            </footer>
+                        </a>
+                    </div>
+                </article>
+                {% else %}
+                <div>
+                    <p>Articles will appear</p>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="empty text-center"> </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js_extra %}
+<script src="{% asset 'blog.js' %}"></script>
+{% endblock js_extra %}

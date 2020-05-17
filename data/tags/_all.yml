@@ -1,0 +1,16 @@
+- pk: python
+  name: Python
+- pk: rust
+  name: Rust
+- pk: statik
+  name: Statik
+- pk: django
+  name: Django
+- pk: popular
+  name: Popular
+- pk: software-design
+  name: Design
+- pk: personal
+  name: Personal
+- pk: tools
+  name: Tools

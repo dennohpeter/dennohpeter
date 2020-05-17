@@ -5,4 +5,5 @@ context:
         page-title: Home | Dennis Peterson
     dynamic:
         home: session.query(home).all()[0]
+        articles: session.query(articles).all()
     
