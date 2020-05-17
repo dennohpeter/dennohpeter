@@ -7,73 +7,78 @@
 {% set page_title = article.title %}
 
 {% block content %}
-<main class="single-post">
-    <div class="reading-progress
-        reading-progress--tag-blog" style="width: 100%;"></div>
-    <div class="post">
-        <div class="post__sidebar-left">
-            <button class="post__toggle-toc-button" role="button" aria-label="Toggle table of contents"> </button>
-            <div class="post__toc">
-                {{ article.toc }}
-            </div>
-        </div>
-        <div class="post__content">
-            <header class="post__header">
-                <div class="post__header-meta">
-                    <a href="{% url 'blog' %}">Blog</a>
-                    <div>{{ article.published|datetimeformat('%B %d, %Y') }}</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="reading-progress reading-progress--tag-blog" style="width: 100%;"></div>
+            <div class="post">
+                <div class="post__sidebar-left">
+                    <button class="post__toggle-toc-button" role="button" aria-label="Toggle table of contents">
+                    </button>
+                    <div class="post__toc">
+                        {{ article.toc }}
+                    </div>
                 </div>
-                <h1 class="post__title"> {{ article.title | capitalize }} </h1>
-            </header>
-            <div class="post__feature-image">
-                <img src="{% asset 'images/' %}{{ article.cover[0].name }}" alt="{{ article.slug }}">
-            </div>
-            <section class="post__html">
-                {{ article.content | safe }}
-            </section>
-            <footer class="post__footer">
-                <p>Published under
-                    <span>
-                        <a href="{% url 'blog' %}">Blog</a>
-                    </span>
-                    on {{ article.published|datetimeformat('%B %d, %Y') }}.
-                </p>
-                Latest update on {{ article.last_update|datetimeformat('%B %d, %Y') }}.
-            </footer>
-        </div>
-        <div class="post__sidebar-right">
-            <div class="post__sidebar-right-content">
-                <!-- <div id="carbon-post">
+                <div class="post__content">
+                    <header class="post__header">
+                        <div class="post__header-meta">
+                            <a href="{% url 'blog' %}">Blog</a>
+                            <span>{{ article.published|datetimeformat('%B %d, %Y') }}</span>
+                        </div>
+                        <h2 class="post__title"> {{ article.title | capitalize }} </h2>
+                    </header>
+                    <div class="post__feature-image">
+                        <img src="{% asset 'images/' %}{{ article.cover[0].name }}" alt="{{ article.slug }}">
+                    </div>
+                    <section class="post__html">
+                        {{ article.content | safe }}
+                    </section>
+                    <footer class="post__footer">
+                        <p>Published under
+                            <span>
+                                <a href="{% url 'blog' %}">Blog</a>
+                            </span>
+                            on {{ article.published|datetimeformat('%B %d, %Y') }}.
+                        </p>
+                        Latest update on {{ article.last_update|datetimeformat('%B %d, %Y') }}.
+                    </footer>
+                </div>
+                <div class="post__sidebar-right">
+                    <div class="post__sidebar-right-content">
+                        <!-- <div id="carbon-post">
                     script to load ad
                     </div> -->
-                <div class="post__related-posts">
-                    <h3 class="post__related-title">
-                        You may also like
-                    </h3>
+                        <div class="post__related-posts">
+                            <h3 class="post__related-title">
+                                You may also like
+                            </h3>
 
-                    <a class="post-card
-                        post-card--in-sidebar" href="{% url 'article', article %}">
-                        <div class="post-card__feature-image"
-                            style="background-image:url({% asset 'images/' %}{{ article.cover[0].name }})">
+                            <a class="post-card  post-card--in-sidebar" 
+                            href="{% url 'article', article %}">
+                                <div class="post-card__feature-image"
+                                    style="background-image:url({% asset 'images/' %}{{ article.cover[0].name }})">
+                                </div>
+                                <header class="post-card__header">
+                                    <div class="post-card__meta">
+                                        <span class="post-card__date">
+                                            {{ article.published|datetimeformat('%B %d, %Y')}}
+                                        </span>
+                                    </div>
+                                    <h2 class="post-card__title">
+                                        {{ article.title }}
+                                    </h2>
+                                </header>
+                                <section class="post-card__excerpt">
+                                    {{ article.excerpt }}
+                                </section>
+                            </a>
                         </div>
-                        <header class="post-card__header">
-                            <div class="post-card__meta">
-                                <span class="post-card__date">
-                                    {{ article.published }}</span>
-                            </div>
-                            <h2 class="post-card__title">
-                                {{ article.title }}
-                            </h2>
-                        </header>
-                        <section class="post-card__excerpt">
-                            {{ article.excerpt }}
-                        </section>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</main>
+</div>
 {% endblock %}
 
 {% block page_js %}
