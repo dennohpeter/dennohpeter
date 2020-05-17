@@ -270,6 +270,12 @@ p {
   font-size: 20px;
   line-height: 1.9em;
 }
+.page_title {
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: -0.2rem;
+  margin: 50px 0 30px;
+}
 .about-intro,
 .tools-intro {
   font-size: 17px;
@@ -282,6 +288,37 @@ p {
   color: var(--heading-color);
   text-decoration: none;
   border-bottom: 1px var(--heading-color) dashed;
+}
+.uses-list h4 {
+  font-weight: 600;
+  font-size: 25px;
+}
+.uses-list ul {
+  list-style: none;
+  padding: 0;
+  font-family: ibm-plex-mono, Monaco, "Lucida Console";
+}
+.uses-list ul li {
+  color: var(--uses-secondary-color);
+  padding: 15px 0;
+}
+
+@media only screen and (max-width: 960px) {
+  .uses-list ul li {
+    padding-bottom: 25px;
+  }
+}
+.uses-list ul li:before {
+  content: "//";
+  color: var(--uses-secondary-color);
+  padding-right: 10px;
+}
+.uses-list ul li a {
+  color: var(--heading-color);
+  font-weight: 600;
+  text-decoration: none;
+  margin-right: 15px;
+  padding-bottom: 3px;
 }
 
 .skills {
