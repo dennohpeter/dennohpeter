@@ -16,14 +16,24 @@
         {% include 'navbar.html' %}
         {% import 'utils.html' as utils %}
         {% block content %}
-            
+
         {% endblock %}
-            
+
         {% include 'footer.html' %}
     </div>
     <script src="{% asset 'base.js' %}"></script>
     {% block page_js %} {% endblock %}
-    
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166959153-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166959153-1');
+    </script>
+
+
 </body>
 
 </html>
