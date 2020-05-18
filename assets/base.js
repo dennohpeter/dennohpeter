@@ -1,15 +1,15 @@
 const toggleSwitch = document.querySelector(".switch-theme-button");
 const themeIcon = toggleSwitch.querySelector("svg > use");
 // sets previously set theme as the default
-if (currentTheme()) {  
+if (currentTheme()) {
   document.documentElement.setAttribute("data-theme", currentTheme());
-  if(currentTheme() === 'dark'){
+  if (currentTheme() === "dark") {
     themeIcon.setAttribute("href", "#icon-light-mode");
   }
 }
 
 // Sets appropriate theme
-function switchTheme() {  
+function switchTheme() {
   if (currentTheme() === "light") {
     document.documentElement.setAttribute("data-theme", "dark");
     localStorage.setItem("theme", "dark");
@@ -27,3 +27,19 @@ toggleSwitch.addEventListener("click", switchTheme, false);
 function currentTheme() {
   return localStorage.getItem("theme") ? localStorage.getItem("theme") : null;
 }
+
+// TOP Menu Sticky
+const navbar = document.querySelector(".wrapper nav");
+const container = document.querySelector(".wrapper > .container");
+window.addEventListener("scroll", function () {
+  let scroll = window.pageYOffset;
+  let navbarHeight = navbar.offsetHeight;
+
+  if (scroll > navbarHeight) {
+    container.style.paddingTop = navbarHeight + "px";
+    navbar.classList.add("sticky");
+  } else {
+    navbar.classList.remove("sticky");
+    container.style.paddingTop = 0;
+  }
+});
