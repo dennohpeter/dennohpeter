@@ -43,3 +43,12 @@ window.addEventListener("scroll", function () {
     container.style.paddingTop = 0;
   }
 });
+
+// Register service worker
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js").then((reg) => {
+      console.log("Service Worker registered.", reg);
+    });
+  });
+}
