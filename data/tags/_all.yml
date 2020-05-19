@@ -6,10 +6,6 @@
   name: Statik
 - pk: django
   name: Django
-- pk: popular
-  name: Popular
-- pk: software-design
-  name: Design
 - pk: personal
   name: Personal
 - pk: tools

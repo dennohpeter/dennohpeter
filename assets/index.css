@@ -62,6 +62,12 @@ hr {
   border-top: 1px var(--hr-color) solid;
   margin: 45px 0;
 }
+.placeholder {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}
 .container {
   box-sizing: border-box;
   margin-left: auto;
@@ -139,7 +145,7 @@ p {
   border-radius: 4px;
 }
 .wrapper nav ul li a:hover {
-  background: var(--heading-color);
+  background: var(--highlight-color);
   color: var(--bg-color);
 }
 .sticky {
@@ -149,8 +155,6 @@ p {
   right: 0;
   z-index: 990;
   background: var(--bg-color);
-  transition: transform 500ms ease, background 500ms ease;
-  -webkit-transition: transform 500ms ease, background 500ms ease;
   box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
 }
 .dashboard {
@@ -169,12 +173,15 @@ p {
   color: var(--heading-color);
   outline: 0;
 }
+.switch-theme-button:hover {
+  color: var(--highlight-color);
+}
 .theme-switch-button svg {
   fill: var(--heading-color);
 }
 /* Home Section */
 .home {
-  padding: 30px 5px;
+  padding: 20px 5px;
 }
 .home a {
   text-decoration: none;

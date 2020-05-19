@@ -1,7 +1,7 @@
 const dashboard = () => {
     const feed = document.querySelector(".feed");
     let posts = document.getElementsByClassName("feed__post");
-    const empty = document.querySelector(".empty");
+    const empty = document.querySelector(".placeholder");
     let tag_list = document.querySelector(".tag-list");
     let tab_links = tag_list.getElementsByClassName("tag-list__link");
     let footer = document.querySelector(".footer");
@@ -20,7 +20,7 @@ const dashboard = () => {
                 footer.style.position = "relative";
             } else {
                 feed.style.display = "none";
-                empty.style.display = "block";
+                empty.style.display = "flex";
                 footer.style.position = "absolute";
                 empty.innerHTML = '<p> <strong>' + tag_name + '</strong > articles will appear here.</p> ';
             };

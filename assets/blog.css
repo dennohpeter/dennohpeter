@@ -7,23 +7,18 @@ a:focus {
 
 /* Article Index  */
 .tag-list-wrapper {
-  border-top: 1px solid var(--heading-color);
-  border-bottom: 1px solid var(--heading-color);
+  border-top: 1px solid var(--hr-color);
+  border-bottom: 1px solid var(--hr-color);
   margin-bottom: 10px;
   font-size: 0.9em;
 }
 .tag-list {
   margin: 0;
   padding: 0;
-  white-space: nowrap;
   overflow-y: hidden;
   overflow-x: auto;
   display: flex;
-  justify-content: center;
-}
-
-.tag-list__item {
-  display: inline;
+  list-style: none;
 }
 
 .d-none {
@@ -32,11 +27,11 @@ a:focus {
 
 .tag-list__link {
   display: inline-block;
-  padding: 20px;
+  padding: 20px 20px 20px 5px;
 }
 
 .tag-list__link.active {
-  color: rgb(8, 253, 216);
+  color: var(--highlight-color);
 }
 
 .feed {
@@ -259,7 +254,7 @@ a:focus {
 }
 .post__header-meta a {
   text-decoration: none;
-  color: var(--heading-color);
+  color: var(--highlight-color);
 }
 .post__title {
   flex-wrap: wrap;
@@ -295,8 +290,7 @@ img {
 
 .page__content ul,
 .post__html ul {
-  list-style-type: circle;
-  padding-left: 20px;
+  padding-left: 15px;
 }
 
 /* TODO determine if to retain the code below */
