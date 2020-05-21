@@ -36,6 +36,7 @@
 
 .card_body p {
   line-height: 21px;
+  color: var(--secondary-color);
 }
 .card_footer {
   -webkit-align-items: center;

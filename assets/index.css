@@ -301,7 +301,8 @@ p {
   margin-top: 10px;
 }
 .about-intro a,
-.tools-intro a {
+.tools-intro a,
+.card_body a {
   color: var(--heading-color);
   text-decoration: none;
   border-bottom: 1px var(--heading-color) dashed;

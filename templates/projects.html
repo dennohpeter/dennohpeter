@@ -18,7 +18,7 @@
                 </div>
                 <div class="card_body">
                     <h4 class="card_title">{{ project.name | upper }}</h4>
-                    {{ project.description }}
+                    {{ project.description | truncate(130) }}
                 </div>
                 <div class="card_footer">
                     <span class="project_status"></span>
