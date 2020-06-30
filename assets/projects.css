@@ -21,7 +21,7 @@
   max-width: 100%;
 }
 .card_body {
-  padding: 10px 15px;
+  padding: 10px 5px;
   display: flex;
   display: -webkit-flex;
   flex-direction: column;
