@@ -28,22 +28,6 @@ function currentTheme() {
   return localStorage.getItem("theme") ? localStorage.getItem("theme") : null;
 }
 
-// TOP Menu Sticky
-const navbar = document.querySelector(".wrapper nav");
-const container = document.querySelector(".wrapper > .container");
-window.addEventListener("scroll", function () {
-  let scroll = window.pageYOffset;
-  let navbarHeight = navbar.offsetHeight;
-
-  if (scroll > navbarHeight) {
-    container.style.paddingTop = navbarHeight + "px";
-    navbar.classList.add("sticky");
-  } else {
-    navbar.classList.remove("sticky");
-    container.style.paddingTop = 0;
-  }
-});
-
 // Register service worker
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {

@@ -1,8 +1,7 @@
 ---
-title: 'Hi, my name is'
-name: 'dennoh peter.'
-subtitle: 'I build things for the web.'
-contactText: 'Get In Touch'
+title: "Hi, my name is"
+name: "dennoh peter."
+subtitle: "I'm a software engineer & computer programmer."
 ---
 
-I'm a junior software engineer based in Mombasa, Ke specializing in building exceptional, faulty-torelant websites and mobile applications.
+I create exceptional and faulty-torelant applications.

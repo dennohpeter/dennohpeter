@@ -1,10 +1,8 @@
 path: /
 template: index
 context:
-    static: 
-        page-title: Home | Dennis Peterson
-    dynamic:
-        home: session.query(home).all()[0]
-        articles: session.query(articles).order_by(articles.published.desc()).all()
-
-    
+  static:
+    page-title: "Dennoh Peter &mdash; software engineer &amp; computer programmer"
+  dynamic:
+    home: session.query(home).all()[0]
+    articles: session.query(articles).order_by(articles.published.desc()).all()

@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-title" content="{{ author }}">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    
+
     <link rel="apple-touch-icon" sizes="180x180" href="{% asset 'favicon/apple-touch-icon.png' %}">
     <link rel="icon" type="image/png" sizes="16x16" href="{% asset 'favicon/favicon-16x16.png' %}">
     <link rel="icon" type="image/png" sizes="32x32" href="{% asset 'favicon/favicon-32x32.png' %}">
@@ -24,13 +24,14 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Description -->
-    <meta name="description" {% block description %}
-        content="I'm Dennis Peterson, Fullstack Developer.This is my personal website." {% endblock %} />
+    <meta name="description" {% block description %} content="I'm a software engineer & computer programmer"
+        {% endblock %} />
+    <meta name="keywords" content="Programmer, Software Engineer, Rust Programmer, Python Programmer, Web Developer">
 
     <!-- Css Styles -->
     <link rel="stylesheet" href="{% asset 'index.css' %}">
     <link rel="stylesheet" href="{% asset 'iconify.css' %}">
-    {% block page_css %} {% endblock %}
+    {% block page_css %} {% endblock  page_css %}
 </head>
 
 <body>
@@ -39,12 +40,12 @@
         {% import 'utils.html' as utils %}
         {% block content %}
 
-        {% endblock %}
+        {% endblock  content %}
 
         {% include 'footer.html' %}
     </div>
     <script src="{% asset 'base.js' %}"></script>
-    {% block page_js %} {% endblock %}
+    {% block page_js %} {% endblock page_js %}
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166959153-1"></script>
     <script>

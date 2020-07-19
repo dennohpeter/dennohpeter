@@ -148,15 +148,7 @@ p {
   background: var(--highlight-color);
   color: var(--bg-color);
 }
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 990;
-  background: var(--bg-color);
-  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
-}
+
 .dashboard {
   display: flex;
   width: 100%;
@@ -206,11 +198,11 @@ p {
   line-height: 1.2;
   color: var(--uses-secondary-color);
   margin: 10px 0 20px;
-  font-size: 50px;
+  font-size: 45px;
 }
 @media (max-width: 30em) {
   .home .subtitle {
-    font-size: 45px;
+    font-size: 40px;
   }
 }
 .description {
