@@ -1,25 +1,27 @@
 {% extends 'base.html' %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% asset 'style.css' %}">
+{% endblock extra_css %}
+
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <div class="about-intro">
-                {{ about.content|safe }}
-
-                <ul class="skills">
-                    {% for skill in about.skills %}
-                    <li>
-                        <i class="icon-chevrons-right"></i> {{ skill.name }}
-                    </li>
-                    {% else %}
-                    {{ util.placeholder(title) }}
-                    {% endfor %}
-                </ul>
-                <hr>
-                <p>Want to hangout? Follow me on <a href="{{ twitter }}" target="_blank"
-                        rel="noopener noreferrer nofollow">Twitter</a>.</p>
-            </div>
+    <div class="row lead">
+        <h1 class="title">{{ about.title }}</h1>
+        <div class="intro">
+            {{ about.content|safe }}
+            <ul class="skills">
+                {% for skill in about.skills %}
+                <li>
+                    <i class="icon-chevrons-right"></i> {{ skill.name }}
+                </li>
+                {% else %}
+                {{ util.placeholder(title) }}
+                {% endfor %}
+            </ul>
+            <hr>
+            <p>Want to hangout? Follow me on <a href="{{ twitter }}" target="_blank"
+                    rel="noopener noreferrer nofollow">Twitter</a>.</p>
         </div>
     </div>
 </div>

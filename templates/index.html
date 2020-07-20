@@ -19,15 +19,13 @@
     </div>
     <div class="row">
         {% for article in articles %}
-        <div class="col-md-12">
-            <div class="post-card">
-                <div class="post-date">{{ article.published|datetimeformat('%B %d, %Y') }}</div>
-                <a href="{% url 'article', article %}">
-                    <span class="post-title">
-                        {{ article.title }}
-                    </span>
-                </a>
-            </div>
+        <div class="post-card">
+            <div class="post-date">{{ article.published|datetimeformat('%B %d, %Y') }}</div>
+            <a href="{% url 'article', article %}">
+                <span class="post-title">
+                    {{ article.title }}
+                </span>
+            </a>
         </div>
         {% endfor %}
     </div>

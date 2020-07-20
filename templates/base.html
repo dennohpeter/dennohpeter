@@ -37,10 +37,9 @@
 <body>
     {% include 'partials/navbar.html' %}
     {% import 'utils.html' as utils %}
-    {% block content %}
 
-    {% endblock  content %}
-
+    {% block content %} {% endblock  content %}
+    
     {% include 'partials/footer.html' %}
     <script src="{% asset 'base.js' %}"></script>
     {% block extra_js %} {% endblock extra_js %}

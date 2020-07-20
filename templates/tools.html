@@ -1,14 +1,16 @@
 {% extends 'base.html' %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% asset 'style.css' %}">
+{% endblock extra_css %}
+
 {% block content %}
 <div class="container">
-    <div class="row">
-        <div class="col-md-12">
-            <h1 class="page_title">{{ tools.title }}</h1>
-            <div class="tools-intro">{{ tools.intro }} </div>
-            <div class="uses-list">
-                {{ tools.content|safe }}
-            </div>
+    <div class="row lead">
+        <h1 class="title">{{ tools.title }}</h1>
+        <div class="intro">{{ tools.intro }} </div>
+        <div class="tools-list">
+            {{ tools.content|safe }}
         </div>
     </div>
 </div>
