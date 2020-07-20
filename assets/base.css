@@ -8,6 +8,7 @@
   --heading-color: #000000;
   --highlight-color: forestgreen;
   --hr-color: #eeeeee;
+  --link-color: #5183f5;
   --post-body: #444444;
   --uses-secondary-color: darkslategray;
 }
@@ -38,11 +39,13 @@
 }
 html {
   font-family: "Inter", sans-serif;
+  color: var(--font-color);
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 body {
   background-color: var(--bg-color);
-  color: var(--font-color);
   margin: 0;
   padding: 0;
 }
@@ -57,8 +60,8 @@ body {
   fill: currentColor;
   font-size: 24px;
 }
-.link {
-  color: var(--highlight-color);
+a {
+  color: var(--link-color);
   text-decoration: none;
 }
 hr {
@@ -102,40 +105,56 @@ p {
 
 /* navbar */
 header {
-  padding: 20px 10px 10px;
+  padding: 1rem 2rem;
+  position: fixed;
+  background: var(--bg-color);
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0 3px 13px rgba(100, 110, 140, 0.1),
+    0 2px 4px rgba(100, 110, 140, 0.15);
 }
-header ul {
-  margin: 3px 0 0 -7px;
+
+@media (min-width: 50em) {
+  header {
+    box-shadow: none;
+    padding: 1.5rem 2rem;
+    position: relative;
+  }
+}
+@media (max-width: 75em) {
+  header .container {
+    padding: 0;
+  }
+}
+.dashboard {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-header ul li {
-  display: inline;
-  margin-right: 5px;
-}
-header ul li a {
+
+.dashboard a {
   color: var(--heading-color);
-  font-family: ibm-plex-mono, Monaco, "Lucida Console";
-  padding: 0 0 3px;
-  text-decoration: none;
-  font-size: 12px;
-  text-transform: uppercase;
-  padding: 3px 10px 5px;
-  border-radius: 4px;
+  text-transform: capitalize;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
 }
-header ul li a:hover {
+@media (min-width: 50em) {
+  .dashboard a {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+}
+.dashboard a:first-child {
+  margin-left: -1rem;
+}
+
+.dashboard a:hover {
   background: var(--highlight-color);
   color: var(--bg-color);
 }
 
-.dashboard {
-  display: flex;
-  width: 100%;
-  padding-left: 8px;
-  padding-right: 8px;
-}
-header .controls {
-  margin-left: auto;
-}
 .switch-theme-button {
   border: none;
   background: none;

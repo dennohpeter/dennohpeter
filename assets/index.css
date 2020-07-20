@@ -2,10 +2,17 @@
 .hero {
   display: flex;
   flex-direction: column;
+  margin-top: 7rem;
 }
 @media (min-width: 50em) {
   .hero {
     flex-direction: row;
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 62.5em) {
+  .hero {
+    align-items: center;
   }
 }
 

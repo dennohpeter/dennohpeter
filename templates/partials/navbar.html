@@ -1,15 +1,13 @@
 <header>
-    <div class="row">
+    <div class="container">
         <div class="dashboard">
-            <div class=tabs">
-                <ul>
-                    <li><a href="{% url 'index' %}" aria-label="start">Start</a></li>
-                    <li><a href="{% url 'about' %}" aria-label="about">About</a></li>
-                    <li><a href="{% url 'tools' %}" aria-label="tools">Tools</a></li>
-                    <li><a href="{% url 'projects' %}" aria-label="projects">Projects</a></li>
-                </ul>
+            <div>
+                <a href="{% url 'index' %}" aria-label="start">Start</a>
+                <a href="{% url 'about' %}" aria-label="about">About</a>
+                <a href="{% url 'tools' %}" aria-label="tools">Tools</a>
+                <a href="{% url 'projects' %}" aria-label="projects">Projects</a>
             </div>
-            <div class="controls">
+            <div>
                 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <defs>
