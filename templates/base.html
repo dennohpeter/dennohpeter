@@ -29,23 +29,21 @@
     <meta name="keywords" content="Programmer, Software Engineer, Rust Programmer, Python Programmer, Web Developer">
 
     <!-- Css Styles -->
-    <link rel="stylesheet" href="{% asset 'index.css' %}">
+    <link rel="stylesheet" href="{% asset 'base.css' %}">
     <link rel="stylesheet" href="{% asset 'iconify.css' %}">
-    {% block page_css %} {% endblock  page_css %}
+    {% block extra_css %} {% endblock  extra_css %}
 </head>
 
 <body>
-    <div class="wrapper">
-        {% include 'navbar.html' %}
-        {% import 'utils.html' as utils %}
-        {% block content %}
+    {% include 'partials/navbar.html' %}
+    {% import 'utils.html' as utils %}
+    {% block content %}
 
-        {% endblock  content %}
+    {% endblock  content %}
 
-        {% include 'footer.html' %}
-    </div>
+    {% include 'partials/footer.html' %}
     <script src="{% asset 'base.js' %}"></script>
-    {% block page_js %} {% endblock page_js %}
+    {% block extra_js %} {% endblock extra_js %}
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166959153-1"></script>
     <script>

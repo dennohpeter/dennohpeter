@@ -1,0 +1,151 @@
+@import url("https://rsms.me/inter/inter.css");
+@import url("https://use.typekit.net/cyw3eir.css");
+:root {
+  --primary-color: #0070f4;
+  --secondary-color: #666666;
+  --font-color: #000000;
+  --bg-color: #ffffff;
+  --heading-color: #000000;
+  --highlight-color: forestgreen;
+  --hr-color: #eeeeee;
+  --post-body: #444444;
+  --uses-secondary-color: darkslategray;
+}
+
+[data-theme="dark"] {
+  --primary-color: #9a97f3;
+  --secondary-color: #dce4ff;
+  --font-color: #ffffff;
+  --bg-color: #010101;
+  --heading-color: #ffffff;
+  --highlight-color: #08fdd8;
+  --hr-color: #222222;
+  --post-body: #cccccc;
+  --uses-secondary-color: #afbbe2;
+}
+
+::-moz-selection {
+  background: var(--highlight-color);
+}
+::selection {
+  background: var(--highlight-color);
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* utils */
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  font-size: 24px;
+}
+.link {
+  color: var(--highlight-color);
+  text-decoration: none;
+}
+hr {
+  border: none;
+  border-top: 1px var(--hr-color) solid;
+  margin: 45px 0;
+}
+.placeholder {
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  align-items: center;
+}
+
+.container {
+  max-width: 74em;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5em;
+}
+@media (min-width: 50em) {
+  .container {
+    padding: 0 2em;
+  }
+}
+.row {
+  margin: 2rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+}
+p {
+  margin: 4px 0 10px;
+}
+
+/* navbar */
+header {
+  padding: 20px 10px 10px;
+}
+header ul {
+  margin: 3px 0 0 -7px;
+  display: flex;
+}
+header ul li {
+  display: inline;
+  margin-right: 5px;
+}
+header ul li a {
+  color: var(--heading-color);
+  font-family: ibm-plex-mono, Monaco, "Lucida Console";
+  padding: 0 0 3px;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  padding: 3px 10px 5px;
+  border-radius: 4px;
+}
+header ul li a:hover {
+  background: var(--highlight-color);
+  color: var(--bg-color);
+}
+
+.dashboard {
+  display: flex;
+  width: 100%;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+header .controls {
+  margin-left: auto;
+}
+.switch-theme-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: var(--heading-color);
+  outline: 0;
+}
+.switch-theme-button:hover {
+  color: var(--highlight-color);
+}
+.theme-switch-button svg {
+  fill: var(--heading-color);
+}

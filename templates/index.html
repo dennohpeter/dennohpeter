@@ -1,36 +1,35 @@
 {% extends 'base.html' %}
 
+{% block extra_css %}
+<link rel="stylesheet" href="{% asset 'index.css' %}">
+{% endblock extra_css %}
+
 {% block content %}
 <div class="container">
+    <div class="row hero">
+        <div class="intro">
+            <h3>{{ home.title }}</h3>
+            <h1>{{ home.name|title }}</h1>
+            <h2>{{ home.subtitle }}</h2>
+            {{ home.content|safe }}
+        </div>
+        <div class="image">
+            <img src="https://placehold.it/500x500" alt="{{ author }}">
+        </div>
+    </div>
     <div class="row">
+        {% for article in articles %}
         <div class="col-md-12">
-            <div class="home">
-                <h4 class="short-intro">{{ home.title }}</h4>
-                <h1 class="name">{{ home.name }}</h1>
-                <h2 class="subtitle"> {{ home.subtitle }}</h2>
-                <div class="description">
-                    {{ home.content|safe }}
-                </div>
-            </div>
-            <div class="row">
-                {% for article in articles %}
-                <div class="col-md-6">
-                    <div class="post-card">
-                        <div class="col-md-12">
-                            <div class="post-date">{{ article.published|datetimeformat('%B %d, %Y') }}</div>
-                        </div>
-                        <div class="col-md-12">
-                            <a href="{% url 'article', article %}">
-                                <span class="post-title">
-                                    {{ article.title }}
-                                </span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                {% endfor %}
+            <div class="post-card">
+                <div class="post-date">{{ article.published|datetimeformat('%B %d, %Y') }}</div>
+                <a href="{% url 'article', article %}">
+                    <span class="post-title">
+                        {{ article.title }}
+                    </span>
+                </a>
             </div>
         </div>
+        {% endfor %}
     </div>
 </div>
 {% endblock %}

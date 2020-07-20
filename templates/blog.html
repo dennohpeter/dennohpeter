@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block page_css %}
+{% block extra_css %}
 <link rel="stylesheet" type="text/css" href="{% asset 'blog.css' %}">
 {% endblock %}
 {% block content %}
@@ -66,6 +66,6 @@
 </div>
 {% endblock %}
 
-{% block page_js %}
+{% block extra_js %}
 <script src="{% asset 'blog.js' %}"></script>
-{% endblock page_js %}
+{% endblock extra_js %}
