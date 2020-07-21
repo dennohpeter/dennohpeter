@@ -1,5 +1,4 @@
 [build]
     publish = "public"
-    command = "statik" 
-    command = "python sw.py"
+    command = "statik && python sw.py"
 
