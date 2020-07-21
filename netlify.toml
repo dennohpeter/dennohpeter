@@ -1,4 +1,4 @@
 [build]
     publish = "public"
-    command = "statik && python sw.py"
+    command = "npm run build && npm start"
 
