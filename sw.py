@@ -34,9 +34,12 @@ part_2 = """
 /* Start the service worker and cache all of the app's content */
 self.addEventListener("install", (evt) => {
   evt.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.addAll(FILES_TO_CACHE);
+    caches
+      .open(CACHE_NAME)
+      .then((cache) => {
+        return cache.addAll(FILES_TO_CACHE);
     })
+    .catch(err => console.log(err))
   );
 });
 // Remove previous cached data from disk.
@@ -57,11 +60,16 @@ self.addEventListener("activate", (evt) => {
 /* Serve cached content when offline */
 self.addEventListener("fetch", function (evt) {
   evt.respondWith(
-    caches.open(CACHE_NAME).then((cache) => {
-      return cache.match(evt.request)
-          .then((response) => {
+    caches
+        .open(CACHE_NAME)
+        .then((cache) => {
+            return cache.match('evt.request')
+        .then((response) => {
             return response || fetch(evt.request);
-          });
+          })
+        .catch((err) => {
+            console.log(err);
+        });
     })
   );
 });
