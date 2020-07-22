@@ -8,7 +8,6 @@
   --heading-color: #000000;
   --highlight-color: forestgreen;
   --hr-color: #eeeeee;
-  --link-color: #5183f5;
   --post-body: #444444;
   --uses-secondary-color: darkslategray;
 }
@@ -61,7 +60,7 @@ body {
   font-size: 24px;
 }
 a {
-  color: var(--link-color);
+  color: var(--highlight-color);
   text-decoration: none;
 }
 hr {

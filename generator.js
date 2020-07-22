@@ -20,5 +20,6 @@ workbox.generateSW({
     },
   ],
   skipWaiting: true,
-  clientsClaim: true
+  clientsClaim: true,
+  offlineGoogleAnalytics: true
 });

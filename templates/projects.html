@@ -7,29 +7,30 @@
 {% block content %}
 <div class="container">
     <div class="row lead">
-        <h1 class="title">import projects</h1>
-        {% for project in projects %}
-        <div class="project_card">
-            <div class="card_image">
-                <div class="img-container">
-                    <img src="https://placehold.it/350x250" alt="{{ project.name }}">
+        <h1 class="title">Import projects</h1>
+        <div class="projects_wrapper">
+            {% for project in projects %}
+            <div class="project_card">
+                <div class="card_image">
+                    <div class="img-container">
+                        <img src="https://placehold.it/300x150" alt="{{ project.name }}">
+                    </div>
+                </div>
+                <div class="card_body">
+                    <h4 class="card_title">{{ project.name | upper }}</h4>
+                    {{ project.description | truncate(130) }}
+                </div>
+                <div class="card_footer">
+                    <span class="project_status"></span>
+                    <span class="see_project">
+                        <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">See project</a>
+                    </span>
                 </div>
             </div>
-            <div class="card_body">
-                <h4 class="card_title">{{ project.name | upper }}</h4>
-                {{ project.description | truncate(130) }}
-            </div>
-            <div class="card_footer">
-                <span class="project_status"></span>
-                <span class="see_project">
-                    <a href="{{ project.github }}" target="_blank" rel="noopener noreferrer">See project</a>
-                </span>
-            </div>
+            {% else %}
+            {{ utils.placeholder('Projects') }}
+            {% endfor %}
         </div>
-        {% else %}
-        {{ utils.placeholder('Projects') }}
-        {% endfor %}
-
     </div>
 </div>
 {% endblock %}
