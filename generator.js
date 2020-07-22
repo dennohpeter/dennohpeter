@@ -3,21 +3,22 @@ const workbox = require("workbox-build");
 workbox.generateSW({
   cacheId: "dennohpeter",
   globDirectory: "public",
-  globPatterns: ["**/*.{css,js}"],
-
+  globPatterns: ["**/*.{html,js,xml}"],
   swDest: "public/sw.js",
   runtimeCaching: [
     {
-      urlPattern: /\.(?:html|xml)$/,
+      urlPattern: /^https?:.*\.(png|jpg|jpeg|webp|svg|ico|gif)$/,
       handler: "StaleWhileRevalidate",
     },
     {
-      urlPattern: /\.(?:png|jpg|jpeg|webp|svg|gif)$/,
+      urlPattern: /^https?:.*\.(ttf|tiff|woff|woff2|eot|json)$/,
       handler: "StaleWhileRevalidate",
     },
     {
-      urlPattern: /\.(?:ttf|tiff|woff|woff2|json)$/,
+      urlPattern: /^https?:\/\/p.typekit\.net\/p\.css/,
       handler: "StaleWhileRevalidate",
     },
   ],
+  skipWaiting: true,
+  clientsClaim: true
 });

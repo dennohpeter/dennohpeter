@@ -4,8 +4,7 @@
   "description": "I'm always coding and documenting what I create at [dennohpeter.com](https://dennohpeter.com).",
   "main": "generator.js",
   "scripts": {
-    "start": "node generator.js",
-    "build": "statik"
+    "start": "statik && node generator.js"
   },
   "repository": {
     "type": "git",
