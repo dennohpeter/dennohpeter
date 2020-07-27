@@ -3,3 +3,4 @@ public/
 templatetags/__pycache__/
 # Local Netlify folder
 .netlify
+node_modules
