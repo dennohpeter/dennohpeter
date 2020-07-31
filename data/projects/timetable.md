@@ -13,6 +13,7 @@ cover:
 
 featured: false
 showInProjects: true
+category: "app"
 ---
 
 A Java-based Android timetable app for the Maseno University School of Computing.

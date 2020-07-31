@@ -86,6 +86,8 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  cursor: pointer;
+
 }
 .card_footer .see_project a {
   text-decoration: none;
@@ -93,7 +95,6 @@
   padding: 0 5px;
   font-size: 0.875rem;
   line-height: 38px;
-  cursor: pointer;
   position: relative;
 }
 .card_footer .see_project a::before {
@@ -108,4 +109,8 @@
 .card_footer .see_project a:focus::before,
 .card_footer .see_project a:hover::before {
   right: 0;
+}
+
+.card_footer .project_link {
+  cursor: pointer;
 }

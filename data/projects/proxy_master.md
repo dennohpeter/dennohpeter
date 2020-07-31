@@ -13,6 +13,7 @@ cover:
 
 featured: false
 showInProjects: true
+category: "cli"
 ---
 
 This is a script which configures removes the hassle of configuring proxy manually by supporting system wide proxy_configuration.

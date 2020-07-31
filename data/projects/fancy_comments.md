@@ -15,6 +15,7 @@ cover:
 
 featured: false
 showInProjects: true
+category: "plugin"
 ---
 
 Fancy Comments is a collection of css snippets for documenting your css code to improve readability and at the same time add beauty. It Works for CSS, SCSS & SASS.

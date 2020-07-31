@@ -2,7 +2,7 @@
 published: Oct 31, 2019
 name: Renew Data App
 github: https://github.com/dennohpeter/RenewData
-external-link: ''
+external-link: 'RenewData.apk'
 tech: 
 
     - java
@@ -13,6 +13,7 @@ cover:
 
 featured: false
 showInProjects: true
+category: "app"
 ---
 
 This is the mobile application that saves you time, data bundles and the 
