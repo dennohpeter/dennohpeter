@@ -31,7 +31,7 @@
                             <i class="icon-external-link"></i>
                         </a>
                     </span>
-                    {% elif project.category == "app" %}
+                    {% elif project.category == "app" and project.external_link !='' %}
                     <span class="project_link">
                         <a href="{% asset 'releases/' %}{{ project.external_link }}" target="_blank"
                             rel="noopener noreferrer">

@@ -1,8 +1,8 @@
 ---
 published: Jun 12, 2018
 name: Daily Tips
-github: https://github.com/dennohpeter/dailytips
-external-link: http://chancetips.herokuapp.com
+github: https://github.com/ariyanstechies/Daily-Football-Tips
+external-link: ''
 tech: 
 
     - java
