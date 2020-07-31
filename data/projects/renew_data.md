@@ -2,7 +2,7 @@
 published: Oct 31, 2019
 name: Renew Data App
 github: https://github.com/dennohpeter/RenewData
-external-link: /raw/master/app/release/Renew%20Data%20v1.5.apk
+external-link: 'RenewData.apk'
 tech: 
 
     - java
