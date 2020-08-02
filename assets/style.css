@@ -27,6 +27,7 @@
 .tools-list h4 {
   font-weight: 600;
   font-size: 25px;
+  margin-bottom: 0;
 }
 .tools-list ul {
   list-style: none;
@@ -35,7 +36,6 @@
 }
 .tools-list ul li {
   color: var(--tools-secondary-color);
-  padding: 15px 0;
 }
 
 @media only screen and (max-width: 960px) {

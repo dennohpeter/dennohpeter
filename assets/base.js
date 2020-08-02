@@ -1,3 +1,6 @@
+// For feather icons
+feather.replace()
+
 const toggleSwitch = document.querySelector(".switch-theme-button");
 const themeIcon = toggleSwitch.querySelector("svg > use");
 // sets previously set theme as the default

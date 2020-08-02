@@ -28,14 +28,14 @@
                     <span class="project_link">
                         <a href="{{ project.external_link }}" target="_blank" rel="noopener noreferrer">
                             Visit
-                            <i class="icon-external-link"></i>
+                            <i data-feather="external-link"></i>
                         </a>
                     </span>
                     {% elif project.category == "app" and project.external_link !='' %}
                     <span class="project_link">
                         <a href="{% asset 'releases/' %}{{ project.external_link }}" target="_blank"
                             rel="noopener noreferrer">
-                            <i class="iconlink-external-"> + </i>
+                            <i data-feather="plus"></i>
                             Install
                         </a>
                     </span>

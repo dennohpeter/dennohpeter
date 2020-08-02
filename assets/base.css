@@ -1,4 +1,4 @@
-@import url("https://rsms.me/inter/inter.css");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 @import url("https://use.typekit.net/cyw3eir.css");
 :root {
   --primary-color: #0070f4;
@@ -37,7 +37,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "Inter", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   color: var(--font-color);
   font-size: 1rem;
   line-height: 1.6;
@@ -101,7 +101,9 @@ h6 {
 p {
   margin: 4px 0 10px;
 }
-
+ul {
+  list-style: none;
+}
 /* navbar */
 header {
   padding: 1rem 2rem;
@@ -172,47 +174,21 @@ header {
 .footer {
   bottom: 0;
   /* position: absolute; */
-  display: flex;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
-  min-height: 70px;
-  margin: 30px 0 0;
-  padding: 50px 0px 25px;
+  padding: 20px;
   color: var(--secondary-color);
 }
-
-.footer_meta {
-  font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono",
-    "Lucida Console", Monaco, monospace;
-  font-size: 13px;
-  line-height: 1.5;
+.footer a {
+  color: var(--font-color);
 }
 
 .footer_social {
-  width: 80%;
+  padding: 20px;
   display: none;
-  margin: 5px auto 10px;
 }
 
-.footer_social ul {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  align-items: center;
-  padding: 0px;
-  margin: 0px;
-  list-style: none;
-}
-
-.footer_social ul li a {
-  padding: 10px;
-  text-decoration: none;
-  color: currentColor;
+.footer_social a {
+  margin-right: 20px;
 }
 
 @media (max-width: 50em) {

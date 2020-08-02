@@ -13,7 +13,8 @@
             <ul class="skills">
                 {% for skill in about.skills %}
                 <li>
-                    <i class="icon-chevrons-right"></i> {{ skill.name }}
+                    <i data-feather="chevrons-right"></i>
+                     {{ skill.name }}
                 </li>
                 {% else %}
                 {{ util.placeholder(title) }}
