@@ -114,3 +114,8 @@
   display: flex;
   align-items: center;
 }
+.card_footer .project_link a svg {
+  margin-left: 8px;
+  margin-right: 5px;
+}
+
