@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 :root {
   --primary-color: #0070f4;
   --secondary-color: #666666;
   --font-color: #000000;
   --bg-color: #ffffff;
   --heading-color: #000000;
-  --highlight-color: forestgreen;
+  --highlight-color: rgba(0, 0, 0, 0.5);
   --hr-color: #eeeeee;
   --post-body: #444444;
   --uses-secondary-color: darkslategray;
@@ -17,7 +17,7 @@
   --font-color: #ffffff;
   --bg-color: #010101;
   --heading-color: #ffffff;
-  --highlight-color: #08fdd8;
+  --highlight-color: #f2f2f2;
   --hr-color: #222222;
   --post-body: #cccccc;
   --uses-secondary-color: #afbbe2;
@@ -36,7 +36,7 @@
   box-sizing: border-box;
 }
 html {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   color: var(--font-color);
   font-size: 1rem;
   line-height: 1.6;
