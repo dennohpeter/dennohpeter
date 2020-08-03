@@ -50,8 +50,6 @@
   line-height: 1.9em;
 }
 
-
-
 .feed a:hover,
 .feed a:focus,
 a:hover,
@@ -72,7 +70,7 @@ a:focus {
   overflow-y: hidden;
   overflow-x: auto;
   display: flex;
-  list-style: none;
+  justify-content: space-between;
 }
 
 .d-none {
@@ -159,11 +157,8 @@ a:focus {
 }
 
 .post-card__footer {
-  justify-self: flex-end;
   display: flex;
-  align-items: center;
-  font-size: 0.9em;
-  padding: 10px 20px 20px;
+  padding: 10px;
 }
 
 .post-card__profile-image {
@@ -212,9 +207,9 @@ a:focus {
     padding-bottom: 0;
   }
 }
-.post__sidebar-right a { 
-    color: var(--heading-color);
-    text-decoration: none;
+.post__sidebar-right a {
+  color: var(--heading-color);
+  text-decoration: none;
 }
 
 .post__toc {
@@ -386,8 +381,8 @@ img {
   padding: 40px;
 }
 .post__footer a {
-    color: var(--highlight-color);
-    text-decoration: none;
+  color: var(--highlight-color);
+  text-decoration: none;
 }
 
 .post__footer p {
@@ -546,7 +541,6 @@ img {
     margin-top: 3px;
   }
 }
-
 
 .subscribe__submit:focus {
   outline: none;

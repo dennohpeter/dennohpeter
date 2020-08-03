@@ -40,16 +40,14 @@
                             <a href="{% url 'article', article %}"> {{ article.title }} </a>
                         </h2>
                     </div>
-                    <a href="{% url 'article', article %}">
-                        <section class="post-card__excerpt">
-                            {{ article.excerpt }}
-                        </section>
-                        <div class="post-card__footer">
-                            <img src="{% asset 'favicon/android-chrome-512x512.png' %}" class="post-card__profile-image"
-                                alt="{{ article.author }}">
-                            {{ article.author }}
-                        </div>
-                    </a>
+                    <div class="post-card__excerpt">
+                        {{ article.excerpt }}
+                    </div>
+                    <div class="post-card__footer">
+                        <img src="{% asset 'favicon/android-chrome-512x512.png' %}" class="post-card__profile-image"
+                            alt="{{ article.author }}">
+                        {{ article.author }}
+                    </div>
                 </div>
             </article>
             {% else %}

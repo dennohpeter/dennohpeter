@@ -176,6 +176,7 @@ header {
   text-align: center;
   padding: 20px;
   color: var(--secondary-color);
+  width: 100%;
 }
 .footer a {
   color: var(--font-color);
