@@ -1,0 +1,10 @@
+published: DateTime
+name: String
+github: String
+external-link: String
+tech: skills[]
+cover: gallery[]
+category: String
+featured: Boolean
+showInProjects: Boolean
+description: Content

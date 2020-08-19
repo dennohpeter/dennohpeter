@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ page_title }}</title>
+    <!-- iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-title" content="{{ author }}">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% asset 'favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% asset 'favicon/favicon-16x16.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% asset 'favicon/favicon-32x32.png' %}">
+
+    <link rel="manifest" href="{% asset 'favicon/manifest.json' %}">
+    <link rel="mask-icon" href="{% asset 'favicon/safari-pinned-tab.svg' %}" color="#2d292b">
+    <link rel="shortcut icon" href="{% asset 'favicon/favicon.ico' %}">
+    <meta name="application-name" content="{{ author }}">
+    <!-- Tile for Win8 -->
+    <meta name="msapplication-TileColor" content="#b91d47">
+    <meta name="msapplication-config" content="{% asset 'favicon/browserconfig.xml' %}">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Description -->
+    <meta name="description" {% block description %} content="I'm a software engineer & computer programmer"
+        {% endblock %} />
+    <meta name="keywords" content="Programmer, Software Engineer, Rust Programmer, Python Programmer, Web Developer">
+    <!-- Pinterest -->
+    <meta name="p:domain_verify" content="969b53b624eb97d4e590ca7723f5cd72"/>
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="{% asset 'base.css' %}">
+    {% block extra_css %} {% endblock  extra_css %}
+</head>
+
+<body>
+    {% include 'partials/navbar.html' %}
+    {% import 'utils.html' as utils %}
+
+    {% block content %} {% endblock  content %}
+    
+    {% include 'partials/footer.html' %}
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="{% asset 'base.js' %}"></script>
+    {% block extra_js %} {% endblock extra_js %}
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166959153-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166959153-1');
+    </script>
+</body>
+
+</html>

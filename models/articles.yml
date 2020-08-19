@@ -1,0 +1,10 @@
+title: String
+slug: String
+author: String
+excerpt: String
+published: DateTime
+last_update: DateTime
+tags: skills[]
+cover: gallery[]
+toc: Text
+content: Content

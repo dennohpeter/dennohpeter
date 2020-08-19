@@ -1,0 +1,4 @@
+title: String
+avatar: String
+skills: skills[]
+content: Content
