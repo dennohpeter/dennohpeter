@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
 :root {
   --primary-color: #0070f4;
   --secondary-color: #666666;
@@ -36,10 +35,16 @@
   box-sizing: border-box;
 }
 html {
-  font-family: "PT Sans", sans-serif;
+  font-family: "Monda","Helvetica","Open Sans","Arial",sans-serif;
   color: var(--font-color);
   font-size: 1rem;
   line-height: 1.6;
+}
+code,pre { 
+  font-family: "Inconsolata","Menlo",Monospace;
+    -webkit-hyphens: none;
+    -moz-hyphens: none
+
 }
 
 body {
@@ -96,6 +101,7 @@ h4,
 h5,
 h6 {
   color: var(--heading-color);
+  font-family: "Exo","Helvetica","Open Sans","Arial",sans-serif;
 }
 p {
   margin: 4px 0 10px;
