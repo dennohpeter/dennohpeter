@@ -1,14 +1,14 @@
 ### Hi, I'm Dennoh Peter &mdash; a software engineer and computer programmer.
 
-I'm always coding and documenting what I create at [dennohpeter.com](https://dennohpeter.com).
+I'm always coding and documenting what I create at [dennoh.me](https://dennoh.me).
 
 ### Stay up to date
 
-- [Projects](https://dennohpeter.com/projects)
-- [Posts](https://dennohpeter.com/blog)
-- [Rss Feed](https://dennohpeter.com/rss.xml)
+- [Projects](https://dennoh.me/projects)
+- [Posts](https://dennoh.me/blog)
+- [Rss Feed](https://dennoh.me/rss.xml)
 
-### Popular Projects ([view all](https://dennohpeter.com/projects))
+### Popular Projects ([view all](https://dennoh.me/projects))
 
-- [Daily Tips](https://dennohpeter.com/projects#dailytips)
-- [Timetable](https://dennohpeter.com/projects#timetable)
+- [Daily Tips](https://dennoh.me/projects#dailytips)
+- [Timetable](https://dennoh.me/projects#timetable)
