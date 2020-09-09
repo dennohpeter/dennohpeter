@@ -12,7 +12,7 @@ skills:
       - statik
 
 ---
-I'm Dennis Peterson , a junior software engineer based in Mombasa, Ke.
+I'm Dennis Peterson , a junior software engineer based in Nairobi, Ke.
 I develop exceptional websites and mobile applications that are efficient, minimal and intuative.
 
 You can find all my [projects](/projects) and [articles](/blog) that I have recently worked on.
