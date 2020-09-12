@@ -11,10 +11,9 @@ I'm always coding and documenting what I create at [dennoh.me](https://dennoh.me
 ### Popular Projects ([view all](https://dennoh.me/projects))
 
 - [Renew Data](https://github.com/dennohpeter/RenewData)
-- <a href="https://github.com/dennohpeter/RenewData" title="Renew Data is a mobile application that reminds you to renew your data plan before expiry green_heart. Still under development">Renew Data</a>
-
-- [Daily Tips](https://dennoh.me/projects#dailytips)
-- [Timetable](https://dennoh.me/projects#timetable)
+- [Daily Tips](https://github.com/dennohpeter/DailyTips)
+- [Timetable](https://github.com/dennohpeter/TimeTable)
+- [Job Hunter](https://github.com/dennohpeter/Job-Hunter)
 - [Amani Center](https://amanicbo.org/)
 - [Essay Scripts](https://essayscripts.com/)
 - [Hairways](https://hairwayskenya.com/)
