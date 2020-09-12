@@ -10,8 +10,10 @@ I'm always coding and documenting what I create at [dennoh.me](https://dennoh.me
 
 ### Popular Projects ([view all](https://dennoh.me/projects))
 
+- [Renew Data](https://dennoh.me/projects#renewdata)
 - [Daily Tips](https://dennoh.me/projects#dailytips)
 - [Timetable](https://dennoh.me/projects#timetable)
 - [Amani Center](https://amanicbo.org/)
 - [Essay Scripts](https://essayscripts.com/)
 - [Hairways](https://hairwayskenya.com/)
+
