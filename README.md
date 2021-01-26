@@ -1,7 +1,5 @@
 ### Hi, I'm Dennoh Peter &mdash; a software engineer and computer programmer.
 
-I'm always coding and documenting what I create at [dennoh.me](https://dennoh.me).
-
 ### Stay up to date
 
 - [Projects](https://dennoh.me/projects)
