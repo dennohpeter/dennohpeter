@@ -1,8 +1,0 @@
-path: /projects
-template: projects
-context:
-    static: 
-        page-title: Projects | Dennis Peterson
-    dynamic:
-        projects: session.query(projects).all()
-    

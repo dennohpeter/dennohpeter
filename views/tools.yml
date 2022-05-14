@@ -1,8 +1,0 @@
-path: /tools
-template: tools
-context:
-    static: 
-        page-title: Tools | Dennis Peterson
-    dynamic:
-        tools: session.query(tools).all()[0]
-    

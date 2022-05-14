@@ -1,8 +1,0 @@
-path: /
-template: index
-context:
-  static:
-    page-title: "Dennoh Peter | Software Engineer"
-  dynamic:
-    home: session.query(home).all()[0]
-    articles: session.query(articles).order_by(articles.published.desc()).all()

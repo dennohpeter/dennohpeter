@@ -1,8 +1,0 @@
-path: /blog
-template: blog
-context:
-  static:
-    page-title: Blog | Dennis Peterson
-  dynamic:
-    tags: session.query(tags).all()
-    articles: session.query(articles).order_by(articles.published.desc()).all()
