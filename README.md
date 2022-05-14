@@ -1,3 +1,1 @@
-Hi, I'm Dennoh Peter &mdash; a software engineer who likes automating boring stuff and basically any task that can be automated from trading bots 💰 to browser automation bots to let you focus on other things that matter ✔️✔️✔️.
-
-Wanna get some job done? Feel free and let me know 😊
+![dino](https://user-images.githubusercontent.com/29105876/168447806-bb29948f-229b-4f42-b5ca-227390f5c57c.gif)
