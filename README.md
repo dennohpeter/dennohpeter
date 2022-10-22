@@ -26,7 +26,7 @@
 <p align="center">
 <a href="https://twitter.com/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="dennohpeter" height="20" width="20" /></a>
 <a href="https://linkedin.com/in/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="dennohpeter" height="20" width="20" /></a>
-<a href="https://stackoverflow.com/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="dennohpeter" height="20" width="20" /></a>
+<a href="https://stackoverflow.com/users/8478944/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="dennohpeter" height="20" width="20" /></a>
 <a href="https://instagram.com/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="dennohpeter" height="20" width="20" /></a>
   <a href="https://dev.to/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dennohpeter" height="20" width="20" /></a>
 </p>
