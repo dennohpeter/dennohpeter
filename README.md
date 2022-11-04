@@ -30,10 +30,3 @@
 <a href="https://instagram.com/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="dennohpeter" height="20" width="20" /></a>
   <a href="https://dev.to/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dennohpeter" height="20" width="20" /></a>
 </p>
-<br>
-<br>
-<br>
-<p align="center"> 
-  Visitor count<br>
-  <img src="https://profile-counter.glitch.me/dennohpeter/count.svg" />
-</p>
