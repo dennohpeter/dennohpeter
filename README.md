@@ -1,8 +1,6 @@
 <br>
 <br>
 <br>
-<br>
-<br>
 <p align="center">
   <img src="https://media3.giphy.com/media/ln7z2eWriiQAllfVcn/200w.webp" width="100">
   <img src="https://i.giphy.com/media/LMt9638dO8dftAjtco/200.webp" width="100">
@@ -14,19 +12,3 @@
   <br>
   <img src="https://camo.githubusercontent.com/936a08778c7e4885053d148c07bbd2339dfbdd80/68747470733a2f2f6665726f73732e6e65742f782f6e6f6465322e676966" />   <br>
   <br>
-  <img src="https://media.tenor.com/-GjGhS7sVaMAAAAM/rust-west.gif" width="300">
-  <img src="https://tourofrust.com/ferris_lofi.png" width="200" height="150">
-  
-</p>
-<br>
-<br>
-<br>
-<br>
-<br>
-<p align="center">
-<a href="https://twitter.com/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/twitter.svg" alt="dennohpeter" height="20" width="20" /></a>
-<a href="https://linkedin.com/in/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="dennohpeter" height="20" width="20" /></a>
-<a href="https://stackoverflow.com/users/8478944/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="dennohpeter" height="20" width="20" /></a>
-<a href="https://instagram.com/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/instagram.svg" alt="dennohpeter" height="20" width="20" /></a>
-  <a href="https://dev.to/dennohpeter" target="_blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/dev-dot-to.svg" alt="dennohpeter" height="20" width="20" /></a>
-</p>
