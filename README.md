@@ -1,6 +1,8 @@
 ## dennohpeter
 
-<pre>(Experiments).expect("Success!")</pre>
+```rs
+(Experiments).expect("Success!")
+```
 
 ### Web3 Tech Stack + Tools
 - [Rust](https://www.rust-lang.org/)
