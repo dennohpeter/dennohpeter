@@ -1,7 +1,7 @@
 ## dennohpeter
 
 ```rs
-(Experiments).expect("Success!")
+(Projects).expect("Success!")
 ```
 
 ### Web3 Tech Stack + Tools
