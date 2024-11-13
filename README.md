@@ -9,7 +9,7 @@
 
 #### About Me
 
-- C.T.O at [Ngeni Labs]
+- Former C.T.O at [Ngeni Labs]
 - Senior developer at [Ngeni Labs]
 - My [site]
   
