@@ -12,7 +12,7 @@
 - prev blockchain developer at [Swypt]
 - prev C.T.O at [Ngeni Labs]
 - prev senior developer at [Ngeni Labs]
-- My [site]
+- my [site]
   
 #### Tech Stack
 
