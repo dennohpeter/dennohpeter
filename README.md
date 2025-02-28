@@ -9,8 +9,9 @@
 
 #### About Me
 
-- Former C.T.O at [Ngeni Labs]
-- Senior developer at [Ngeni Labs]
+- prev blockchain developer at [Swypt]
+- prev C.T.O at [Ngeni Labs]
+- prev senior developer at [Ngeni Labs]
 - My [site]
   
 #### Tech Stack
@@ -25,6 +26,7 @@ You can [sponsor] my work
 [sandwicher]: https://github.com/dennohpeter/sandwicher
 [MultiDexArbBot]: https://github.com/dennohpeter/MultiDexArbBot
 [Ngeni Labs]: https://ngeni.io
+[Swypt]: https://www.swypt.io
 [site]: https://dennohpeter.com
 [rust]: https://www.rust-lang.org/
 [typescript]: https://www.typescriptlang.org/
