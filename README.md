@@ -1,4 +1,4 @@
-#### Projects
+#### Recent Projects
 
 - [hyperliquid] - A hyperliquid SDK implementation in pure rust
  
