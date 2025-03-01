@@ -2,7 +2,7 @@
 
 - [hyperliquid] - A hyperliquid SDK implementation in pure rust
  
-#### Toy Projects
+#### Past Projects
 
 - [sandwicher] - This is a sandwiching bot that works on BSC chain
 - [MultiDexArbBot] - This is an arbitrage bot that uses existing price aggregators such as 1inch
